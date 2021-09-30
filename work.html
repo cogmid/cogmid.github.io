@@ -3,7 +3,7 @@
 <link href="photos/favicon.ico" rel="icon" type="image/x-icon"/>
     </head>
     <body>
-        <style type="text/css">
+ <style type="text/css">
 a:link { color: #000000; }
 a:visited { color: #000000; }
 a:hover { color: #464c2d; } 
@@ -12,11 +12,49 @@ a:hover { color: #464c2d; }
     body {
         background-color: white;
     }    
+</style>  
+<style>
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+align-content: center
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+align-content: center
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+align-content: center
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+align-content: center
+}
+.dropdown-content a:hover {background-color: #464c2d;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #ffffff;}
 </style>
+<body>    
 <center>
 <a href="work.html"><small><span style="font-family:sans-serif">WORK</span></small></a>
 <a href="personal.html"><small><span style="font-family:sans-serif">PERSONAL</span></small></a>
-<a href="index.html" style="text-decoration: none"><small><span style="font-family:sans-serif" "text-decoration: none">&emsp;&emsp;✸ CORIN MIDDLETON ✸&emsp;&emsp;</span></small></a>
+<div class="dropdown">
+  <a href="index.html"><button class="dropbtn">  ✸ CORIN MIDDLETON ✸  </button></a>
+  <div class="dropdown-content">
+    <a href="books.html"><small><span style="font-family:sans-serif">  ✶ BOOKS 2021 ✶  </span></small></a>
+    <a href="films.html"><small><span style="font-family:sans-serif">  ✶ FILMS 2021 ✶  </span></small></a>
+  </div>
+</div>  
 <a href="about.html"><small><span style="font-family:sans-serif">ABOUT</span></small></a>
 <a href="news.html"><small><span style="font-family:sans-serif">NEWS</span></small></a>
 
