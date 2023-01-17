@@ -1,78 +1,111 @@
 <html lang="en-us"><head>
-
 <title>home</title>
+<body style="background-color: whitesmoke">
 <link href="photos/favicon.ico" rel="icon" type="image/x-icon"/>
-</head>
-<body>
-
-<style type="text/css">
-a:link { color: #000000; }
-a:visited { color: #000000; }
-a:hover { color: #464c2d; } 
+    <style>
+      @font-face { font-family: ArialNarrow; src: url(ArialNarrow.ttf); } 
+      h1 {
+         font-family: ArialNarrow;
+          font-size: 32px;
+      }
     </style>
-<style>
-    body {
-        background-color: white
-    }    
-</style>  
-<style>
-.dropbtn {
-  background-color: transparent;
-  color: mediumblue;
-  border: none;
-align-content: center
+    
+    <style>
+    #hp  {
+float: right;    
+ margin: 0 0 0 15px;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-align-content: center
+    </style>
+    
+    <style>
+a:link {
+  color: 000000;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: transparent;
-  min-width: 160px;
-align-content: center
+a:visited {
+  color: 000000;
 }
-.dropdown-content a {
-  color: mediumblue;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-align-content: center
+a:hover {
+  color: olivedrab;
 }
-.dropdown-content a:hover {background-color: lightgrey;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: transparent;}
+a:active {
+  color: 000000;
+}
 </style>
-<body>    
-<center>
-<a href="work.html"><small><span style="font-family:sans-serif; color: transparent; text-shadow: 0px 0px 1.5px #000000">WORK</span></small></a>
-<a href="personal.html"><small><span style="font-family:sans-serif; color: transparent; text-shadow: 0px 0px 1.5px #000000">PERSONAL</span></small></a>
-<div class="dropdown">
-  <a href="index.html"><button class="dropbtn">  ✸ CORIN MIDDLETON ✸  </button></a>
-  <div class="dropdown-content">
-    <a href="books.html"><small><span style="font-family:sans-serif">  ✶ BOOKS 2022 ✶  </span></small></a>
-    <a href="films.html"><small><span style="font-family:sans-serif">  ✶ FILMS 2022 ✶  </span></small></a>
-  </div>
-</div>  
-<a href="about.html"><small><span style="font-family:sans-serif; color: transparent; text-shadow: 0px 0px 1.5px #000000">ABOUT</span></small></a>
-<a href="shop.html"><small><span style="font-family:sans-serif; color: transparent; text-shadow: 0px 0px 1.5px #000000">SHOP</span></small></a>
-  <body>
-      <br><br><br><br><br>
+    
+    <img src="UFO.png" alt="ufo" style="width: 150px;" id="hp"/>
+    
+    <h1>Corin Middleton is a multidisciplinary artist and designer living and working in Bristol, UK. He graduated from The University of the West of England with a BA in Graphic Design in 2022. Through his work Corin explores niche and strange topics, focusing heavily on processes and the physicality of his outcomes.<br><br>
 
-     <head>
-  <script data-require="jquery@1.10.1" data-semver="1.10.1" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="js/sketch.js"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <a href="mailto:hello@corinmiddleton.com" style="text-decoration: none">Email</a><br>
+    <a href="https://www.instagram.com/ilktree" style="text-decoration: none">Instagram</a><br>
+    <a href="https://ilktree.bigcartel.com/" style="text-decoration: none">Shop</a><br><br></h1>
+    
+<style>
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+    position: relative;
 
-<body onload="">
+}
 
-<canvas id="colors_sketch" width="900" height="600"></canvas>
-  <script src="js/script.js"></script>
-<br><br><span style="font-size: 8">✦ </span><small><span style="font-family: sans-serif">CLICK AND DRAG TO MAKE DIGITAL MARKS</span></small><span style="font-size: 8"> ✦</span> 
-</body>
+.hover-image {
+    visibility: hidden;
+}
 
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
+}
 
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+/* Change width and height to scale images */
+    width: 90vw;
+    height: 90vh;
+}
+
+.hover-image img {
+    max-width: 70% !important;
+    max-height: 70% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+</style>
+            
+<h1>      
+<div class="hover-title"onclick="location.href='mythworld.html';">Mythworld ✶</div>
+<div class="hover-image"><img src="photos/1.png"></div>
+<div class="hover-title"onclick="location.href='warishell.html';">War is Hell ✶</div>
+<div class="hover-image"><img src="photos/2.png"></div>
+<div class="hover-title"onclick="location.href='brickwall.html';">Brick Wall ✶</div>
+<div class="hover-image"><img src="photos/3.png"></div>
+<div class="hover-title"onclick="location.href='businesscard.html';">Business Cards ✶</div>
+<div class="hover-image"><img src="photos/4.png"></div>
+<div class="hover-title"onclick="location.href='fuzzball.html';">Fuzz Ball ✶</div>
+<div class="hover-image"><img src="photos/5.png"></div>
+<div class="hover-title"onclick="location.href='shitshow.html';">Shitshow ✶</div>
+<div class="hover-image"><img src="photos/6.png"></div>        
+<div class="hover-title"onclick="location.href='security.html';">Security</div>
+<div class="hover-image"><img src="photos/7.png"></div>      
+
+<br><br><br><span id="demo"></span>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+  </h1>    
+
+       
 
