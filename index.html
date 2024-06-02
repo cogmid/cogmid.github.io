@@ -1,97 +1,31 @@
-<html lang="en-us"><head>
-<title>home</title>
-<body style="background-color: whitesmoke">
-<link href="photos/favicon.ico" rel="icon" type="image/x-icon"/>
-    <style>
-      @font-face { font-family: ArialNarrow; src: url(ArialNarrow.ttf); } 
-      h1 {
-         font-family: ArialNarrow;
-          font-size: 32px;
-      }
-    </style>
+<html scroll-behavior: smooth; lang="en"><head> <style type ="text/css" >
+.footer{ position: fixed; text-align: left; bottom: 0px; width: 100% }  
+</style><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Home</title>
     
-    <style>
-    #hp  {
-float: right;    
- margin: 0 0 0 15px;
-}
-    </style>
-    <style>
-a:link {
-  color: 000000;
-}
-a:visited {
-  color: 000000;
-}
-a:hover {
-  color: olivedrab;
-}
-a:active {
-  color: 000000;
-}
-</style>
-    <img src="UFO.png" alt="ufo" style="width: 150px;" id="hp"/>
-    <h1>Corin Middleton is a multidisciplinary artist and designer living and working in Bristol, UK. He graduated from The University of the West of England with a BA in Graphic Design in 2022. Through his work Corin explores niche and strange topics, focusing heavily on processes and the physicality of his outcomes.<br><br>
-
-    <a href="mailto:hello@corinmiddleton.com" style="text-decoration: none">Email</a><br>
-    <a href="https://www.instagram.com/ilktree" style="text-decoration: none">Instagram</a><br>
-    <a href="https://ilktree.bigcartel.com/" style="text-decoration: none">Shop</a><br><br></h1> 
 <style>
-.hover-title {
-    display: inline;
-    pointer-events: auto;
-    cursor: pointer;
-    position: relative;
-}
-.hover-image {
-    visibility: hidden;
-}
-body:not(.mobile) .hover-title:hover + .hover-image {
-    visibility: visible;
-    pointer-events: none;
-}
-.hover-image {
-    display: flex;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    pointer-events: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+::selection {background: #FF3100; color: #000000; }
+body { background-color: #E7EF2C; }
+@font-face { font-family: "Diatype Regular"; font-weight: normal; src: url("fonts/DiatypeR.otf") format("opentype"); }  
+@font-face { font-family: "Diatype Bold"; font-weight: bold; src: url("fonts/DiatypeB.otf") format("opentype"); }
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:hover { color: #FF3100; }
+a:active { color: #000000; }
+html, body { overflow: auto; }
+.hover-title { display: inline; pointer-events: auto; cursor: pointer; position: relative; }
+.hover-image { visibility: hidden; }
+body:not(.mobile) .hover-title:hover + .hover-image { visibility: visible; pointer-events: none; }
+.hover-image { display: flex; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; pointer-events: none; flex-direction: column; align-items: center; justify-content: center; width: 80vw; height: 80vh; }
+.hover-image img { max-width: 70% !important; max-height: 70% !important; width: auto !important; height: auto !important; margin-bottom: 0; }
+</style>     
 
-/* Change width and height to scale images */
-    width: 90vw;
-    height: 90vh;
-}
-.hover-image img {
-    max-width: 70% !important;
-    max-height: 70% !important;
-    width: auto !important;
-    height: auto !important;
-    margin-bottom: 0;
-}
-</style>           
-<h1>      
-<div class="hover-title"onclick="location.href='mythworld.html';">Mythworld ✶</div>
-<div class="hover-image"><img src="photos/1.png"></div>
-<div class="hover-title"onclick="location.href='warishell.html';">War is Hell ✶</div>
-<div class="hover-image"><img src="photos/2.png"></div>
-<div class="hover-title"onclick="location.href='brickwall.html';">Brick Wall ✶</div>
-<div class="hover-image"><img src="photos/3.png"></div>
-<div class="hover-title"onclick="location.href='businesscard.html';">Business Cards ✶</div>
-<div class="hover-image"><img src="photos/4.png"></div>
-<div class="hover-title"onclick="location.href='fuzzball.html';">Fuzz Ball ✶</div>
-<div class="hover-image"><img src="photos/5.png"></div>
-<div class="hover-title"onclick="location.href='shitshow.html';">Shitshow ✶</div>
-<div class="hover-image"><img src="photos/6.png"></div>        
-<div class="hover-title"onclick="location.href='security.html';">Security</div>
-<div class="hover-image"><img src="photos/7.png"></div>      
-<br><br><br><span id="demo"></span>
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d.toDateString();
-</script>
-  </h1>    
+
+<div class="hover-title"onclick="location.href='index.html';"><font face="Diatype Bold" font size="4">Corin Middleton</font></div><div class="hover-image"><img src="photos/me.png"></div><br>
+<font face="Diatype Regular" font size="4">Multidisciplinary artist specialising in</font> 
+<div class="hover-title"onclick="location.href='zines.html';"><font face="Diatype Bold" font size="4">zines</font></div><div class="hover-image"><img src="photos/mythworld1.png"></div><font face="Diatype Regular">,</font>
+<div class="hover-title"onclick="location.href='print.html';"><font face="Diatype Bold" font size="4">print</font></div> <div class="hover-image"><img src="photos/grouperprint.jpg"></div>
+<font face="Diatype Regular" font size="4">and</font>
+<div class="hover-title"onclick="location.href='video.html';"><font face="Diatype Bold" font size="4">moving image</font></div><div class="hover-image"><img src="photos/brickwall.jpg"></div><font face="Diatype Regular" font size="4">.<br>Portfolio available upon request.</font> 
+<div class="footer"><font face="Diatype Regular" font size="4" font><a href="mailto:hello@corinmiddleton.com" style="text-decoration: none"><u>Email,</u> </a><a href="https://www.instagram.com/ilktree" style="text-decoration: none"><u>Instagram,</u> </a><a href="https://www.are.na/corin-middleton-ypovwcnkpi4" style="text-decoration: none"><u>Are.na,</u> </a><a href="https://ilktree.bigcartel.com/" style="text-decoration: none"><u>Shop</u></a> ✴ <span id="demo"></span></font></div>
+<script> var d = new Date(); document.getElementById("demo").innerHTML = d.toDateString(); </script>     
